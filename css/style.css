@@ -82,7 +82,7 @@ a {
 }
 
 .link-arrow::after {
-  content: '-->';
+  content: "-->";
   margin-left: 5px;
   transition: margin-left 0.15s;
 }
@@ -94,5 +94,43 @@ a {
 @media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1.5rem;
+  }
+}
+
+/* badges */
+
+.badge {
+  /* oocss: structure */
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+}
+
+.badge--primary {
+  /* oocss: skin */
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.badge--secondary {
+  /* oocss: skin */
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.badge--small {
+  /* oocss: skin */
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
   }
 }
