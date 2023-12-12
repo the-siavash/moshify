@@ -467,3 +467,31 @@ a {
     font-size: 1.6rem;
   }
 }
+
+/* grids */
+
+.grid {
+  display: grid;
+}
+
+/* .grid--cols-2 {
+  grid-template-columns: repeat(auto-fit, minmax(385px, 1fr));
+} */
+
+@media screen and (min-width: 768px) {
+  .grid--cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid--cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid--cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
