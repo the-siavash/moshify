@@ -382,3 +382,38 @@ a {
     font-size: 1.7rem;
   }
 }
+
+/* media object */
+
+.media {
+  display: flex;
+}
+
+.media__image {
+  margin-top: 1rem;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+
+.media__title {
+  font-size: 2.8rem;
+  margin: 0 0 1rem;
+}
+
+.media__body p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .media__title {
+    font-size: 2.4rem;
+  }
+
+  .media__body p {
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
+  }
+}
