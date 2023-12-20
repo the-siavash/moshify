@@ -54,6 +54,11 @@ p {
   margin-top: 0;
 }
 
+::selection {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
 @media screen and (min-width: 1024px) {
   body {
     font-size: 1.8rem;
@@ -145,7 +150,6 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
-  color: var(--color-headings);
 }
 
 .list--inline .list__item {
@@ -156,6 +160,7 @@ a {
 .list--tick {
   list-style-image: url(../assets/icons/tick.svg);
   padding-left: 3rem;
+  color: var(--color-headings);
 }
 
 .list--tick .list__item {
@@ -689,7 +694,9 @@ a {
   color: #7b858b;
 }
 
-.block--dark .block__heading {
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
   color: #fff;
 }
 
@@ -907,12 +914,56 @@ a {
 
 /* block-features */
 
-.block-features__heading {
-  text-align: center;
-}
-
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
   }
 }
+
+/* block-showcase */
+
+.block-showcase {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+}
+
+.block-showcase.block {
+  padding: 5rem 2rem 10rem;
+}
+
+.block-showcase .grid {
+  row-gap: 4rem;
+}
+
+.block-showcase .block__header {
+  margin-bottom: 6rem;
+}
+
+.block-showcase__image {
+  width: 100%;
+}
+
+.block-showcase__item {
+  margin-bottom: 4rem;
+}
+
+.block-showcase__item:last-of-type {
+  margin-bottom: 8rem;
+}
+
+.block-showcase .media__title {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+  .block-showcase__image {
+    /* width: auto;
+    max-width: 700px; */
+    min-width: 700px;
+    justify-self: end;
+  }
+}
+
+/* block-testimonial */
