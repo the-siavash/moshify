@@ -967,3 +967,9 @@ a {
 }
 
 /* block-testimonial */
+
+.block-testimonial .block__header {
+  margin-bottom: 4rem;
+}
+
+/* footer */
