@@ -880,3 +880,39 @@ a {
   max-width: 500px;
   margin: 0 auto;
 }
+
+/* feature component */
+
+.feature {
+  gap: 4rem 2rem;
+  margin-top: 12rem;
+}
+
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+.feature__heading {
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.feature__description {
+  font-size: 2rem;
+}
+
+/* block-features */
+
+.block-features__heading {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
+}
