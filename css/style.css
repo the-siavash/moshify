@@ -343,6 +343,10 @@ a {
   color: #fff;
 }
 
+.card--primary .badge--primary {
+  background-color: #126de4;
+}
+
 .card--secondary .badge--secondary {
   background-color: #02cdf1;
 }
@@ -378,6 +382,23 @@ a {
   font-size: 2rem;
   letter-spacing: 1px;
   margin-bottom: 2rem;
+}
+
+.plan {
+  transition: transform 0.3s ease-in-out;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan--popular {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.plan--popular:hover {
+  transform: scale(1.07);
 }
 
 .plan--popular .card__header {
@@ -847,4 +868,15 @@ a {
   .block-domain__description {
     font-size: 1.8rem;
   }
+}
+
+/* block-plans */
+
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
