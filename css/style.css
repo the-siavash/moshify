@@ -35,6 +35,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 h1 {
@@ -679,7 +680,7 @@ a {
   margin: 0 auto;
 }
 
-/* navigation bar */
+/* navigation bar section */
 
 .nav {
   background-color: #111;
@@ -740,5 +741,44 @@ a {
 
   .nav__item {
     border: 0;
+  }
+}
+
+/* hero section */
+
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.hero__image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero__heading {
+  font-size: 6rem;
+}
+
+.hero__description {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: #b9c3cf;
+  margin: 2rem 0 5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    text-align: left;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__heading {
+    font-size: 8rem;
   }
 }
