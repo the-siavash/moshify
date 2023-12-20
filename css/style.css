@@ -268,6 +268,15 @@ a {
   display: inline-block;
 }
 
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  /* position: relative;
+  bottom: -4px; */
+  vertical-align: middle;
+}
+
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
@@ -298,7 +307,7 @@ a {
 .input-group .input {
   border: none;
   flex-grow: 1;
-  padding: 1.5rem 2rem;
+  overflow: hidden;
 }
 
 .input-group .btn {
@@ -786,5 +795,56 @@ a {
 @media screen and (min-width: 1024px) {
   .hero__heading {
     font-size: 8rem;
+  }
+}
+
+/* block-domain section */
+
+.block-domain {
+  text-align: center;
+}
+
+.block-domain__description {
+  font-size: 2rem;
+}
+
+.block-domain__searchbox {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: none;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.block-domain__searchbox-btn {
+  font-size: 1.8rem;
+}
+
+.block-domain__prices {
+  max-width: 700px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  row-gap: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    row-gap: 0;
+  }
+  .block-domain__searchbox-btn {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .block-domain__description {
+    font-size: 1.8rem;
   }
 }
