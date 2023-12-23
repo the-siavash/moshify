@@ -511,6 +511,7 @@ a {
 @media screen and (min-width: 1024px) {
   .quote__text {
     font-size: 2rem;
+    line-height: 1.5;
   }
 
   .quote__author {
