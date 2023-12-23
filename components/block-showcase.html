@@ -3,8 +3,17 @@
     <h2>User-friendly Control Panel</h2>
   </header>
   <div class="grid grid--cols-2 container">
-    <img class="block-showcase__image" src="assets/images/ipad.png" alt="" />
-    <!-- TODO image optimization -->
+    <picture>
+      <source
+        type="image/webp"
+        srcset="assets/images/ipad.webp 1x, assets/images/ipad@2x.webp 2x"
+      />
+      <source
+        type="image/png"
+        srcset="assets/images/ipad.png 1x, assets/images/ipad@2x.png 2x"
+      />
+      <img class="block-showcase__image" src="assets/images/ipad.png" alt="" />
+    </picture>
 
     <ul class="list block-showcase__content">
       <!-- 1 -->

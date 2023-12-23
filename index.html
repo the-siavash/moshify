@@ -10,17 +10,19 @@
     />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
       src="https://kit.fontawesome.com/e45223c4e9.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-
     <!-- navbar -->
     <header>
       <nav class="nav callapsible">
-        <a class="nav__logo" href="#"><img src="assets/icons/logo.svg" alt="" /></a>
+        <a class="nav__logo" href="#"
+          ><img src="assets/icons/logo.svg" alt=""
+        /></a>
         <svg class="icon icon--white nav__toggler">
           <use xlink:href="./assets/icons/sprite.svg#menu"></use>
         </svg>
@@ -30,7 +32,7 @@
           <li class="nav__item"><a href="#">Domain</a></li>
           <li class="nav__item"><a href="#">Pricing</a></li>
         </ul>
-      </nav>      
+      </nav>
     </header>
 
     <!-- hero -->
@@ -70,7 +72,11 @@
         </p>
       </header>
       <div class="input-group block-domain__searchbox">
-        <input type="text" class="input" placeholder="Enter domain name here..." />
+        <input
+          type="text"
+          class="input"
+          placeholder="Enter domain name here..."
+        />
         <button class="btn btn--accent block-domain__searchbox-btn">
           <svg class="icon icon--white">
             <use xlink:href="./assets/icons/sprite.svg#search"></use></svg
@@ -86,7 +92,7 @@
         <li>.dev $10</li>
       </ul>
     </section>
-    
+
     <!-- plans -->
     <section class="block container block-plans">
       <div class="grid grid--cols-3">
@@ -161,7 +167,8 @@
       <div class="block__header">
         <h2>Host on the Cloud to Keep Growing</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, voluptatem.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed,
+          voluptatem.
         </p>
       </div>
       <!-- feature 1 -->
@@ -174,14 +181,23 @@
           </span>
           <h3 class="feature__heading">Super Easy to Use</h3>
           <p class="feature__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe sed
-            voluptatum possimus ipsum. Totam doloremque molestiae veniam sapiente
-            impedit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe
+            sed voluptatum possimus ipsum. Totam doloremque molestiae veniam
+            sapiente impedit.
           </p>
           <a href="#" class="link-arrow">learn more</a>
         </div>
-        <img class="feature__image" src="assets/images/easy.jpg" alt="" />
-        <!-- TODO make image optimize for resolution, then convert it to webp format -->
+        <picture>
+          <source
+            type="image/webp"
+            srcset="assets/images/easy.webp 1x, assets/images/easy@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="assets/images/easy.jpg 1x, assets/images/easy@2x.jpg 2x"
+          />
+          <img class="feature__image" src="assets/images/easy@2x.jpg" alt="" />
+        </picture>
       </article>
       <!-- feature 2 -->
       <article class="grid grid--cols-2 feature">
@@ -193,14 +209,23 @@
           </span>
           <h3 class="feature__heading">Simply Fast Websites</h3>
           <p class="feature__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe sed
-            voluptatum possimus ipsum. Totam doloremque molestiae veniam sapiente
-            impedit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe
+            sed voluptatum possimus ipsum. Totam doloremque molestiae veniam
+            sapiente impedit.
           </p>
           <a href="#" class="link-arrow">learn more</a>
         </div>
-        <img class="feature__image" src="assets/images/fast.jpg" alt="" />
-        <!-- TODO make image optimize for resolution, then convert it to webp format -->
+        <picture>
+          <source
+            type="image/webp"
+            srcset="assets/images/fast.webp 1x, assets/images/fast@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="assets/images/fast.jpg 1x, assets/images/fast@2x.jpg 2x"
+          />
+          <img class="feature__image" src="assets/images/fast@2x.jpg" alt="" />
+        </picture>
       </article>
       <!-- feature 3 -->
       <article class="grid grid--cols-2 feature">
@@ -212,14 +237,33 @@
           </span>
           <h3 class="feature__heading">Wordpress Made Easy</h3>
           <p class="feature__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe sed
-            voluptatum possimus ipsum. Totam doloremque molestiae veniam sapiente
-            impedit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe
+            sed voluptatum possimus ipsum. Totam doloremque molestiae veniam
+            sapiente impedit.
           </p>
           <a href="#" class="link-arrow">learn more</a>
         </div>
-        <img class="feature__image" src="assets/images/wordpress.jpg" alt="" />
-        <!-- TODO make image optimize for resolution, then convert it to webp format -->
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              assets/images/wordpress.webp    1x,
+              assets/images/wordpress@2x.webp 2x
+            "
+          />
+          <source
+            type="image/jpg"
+            srcset="
+              assets/images/wordpress.jpg    1x,
+              assets/images/wordpress@2x.jpg 2x
+            "
+          />
+          <img
+            class="feature__image"
+            src="assets/images/wordpress@2x.jpg"
+            alt=""
+          />
+        </picture>
       </article>
       <!-- feature 4 -->
       <article class="grid grid--cols-2 feature">
@@ -231,25 +275,54 @@
           </span>
           <h3 class="feature__heading">24/7 Expert Support</h3>
           <p class="feature__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe sed
-            voluptatum possimus ipsum. Totam doloremque molestiae veniam sapiente
-            impedit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe
+            sed voluptatum possimus ipsum. Totam doloremque molestiae veniam
+            sapiente impedit.
           </p>
           <a href="#" class="link-arrow">learn more</a>
         </div>
-        <img class="feature__image" src="assets/images/support.jpg" alt="" />
-        <!-- TODO make image optimize for resolution, then convert it to webp format -->
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              assets/images/support.webp    1x,
+              assets/images/support@2x.webp 2x
+            "
+          />
+          <source
+            type="image/jpg"
+            srcset="
+              assets/images/support.jpg    1x,
+              assets/images/support@2x.jpg 2x
+            "
+          />
+          <img
+            class="feature__image"
+            src="assets/images/support@2x.jpg"
+            alt=""
+          />
+        </picture>
       </article>
     </section>
-    
+
+    <!-- showcase -->
     <section class="block block--dark block--skewed-right block-showcase">
       <header class="block__header">
         <h2>User-friendly Control Panel</h2>
       </header>
       <div class="grid grid--cols-2 container">
-        <img class="block-showcase__image" src="assets/images/ipad.png" alt="" />
-        <!-- TODO image optimization -->
-    
+        <picture class="block-showcase__image">
+          <source
+            type="image/webp"
+            srcset="assets/images/ipad.webp 1x, assets/images/ipad@2x.webp 2x"
+          />
+          <source
+            type="image/png"
+            srcset="assets/images/ipad.png 1x, assets/images/ipad@2x.png 2x"
+          />
+          <img src="assets/images/ipad.png" alt="" />
+        </picture>
+
         <ul class="list block-showcase__content">
           <!-- 1 -->
           <li>
@@ -307,13 +380,15 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section>    
 
     <!-- testimonial -->
     <div class="block container block-testimonial">
       <header class="block__header">
         <h2>What our Customers are Saying</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, ipsam.</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, ipsam.
+        </p>
       </header>
       <div class="card testimonial">
         <div class="grid grid--cols-2">
@@ -331,9 +406,9 @@
           </div>
           <blockquote class="quote">
             <p class="quote__text">
-              Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
-              libero ab laudantium modi eos nihil consectetur dolorum similique
-              totam impedit!
+              Lorem, ipsum dolor sit amet, consectetur adipisicing elit.
+              Recusandae libero ab laudantium modi eos nihil consectetur dolorum
+              similique totam impedit!
             </p>
             <footer>
               <div class="media">
@@ -344,7 +419,9 @@
                 </div>
                 <div class="media__body">
                   <h3 class="media__title quote__author">Lord Vader</h3>
-                  <p class="media__text quote__organization">from the Dark Side</p>
+                  <p class="media__text quote__organization">
+                    from the Dark Side
+                  </p>
                 </div>
               </div>
             </footer>
@@ -375,7 +452,7 @@
             </div>
           </div>
         </section>
-    
+
         <section class="footer__section">
           <div class="callapsible">
             <header class="callapsible__header">
@@ -393,7 +470,7 @@
             </div>
           </div>
         </section>
-    
+
         <section class="footer__section">
           <div class="callapsible">
             <header class="callapsible__header">
@@ -411,7 +488,7 @@
             </div>
           </div>
         </section>
-    
+
         <section class="footer__section">
           <div class="callapsible">
             <header class="callapsible__header">
@@ -429,16 +506,18 @@
             </div>
           </div>
         </section>
-    
+
         <div class="footer__brand">
           <img src="assets/icons/logo.svg" alt="" />
           <p class="footer__copyright">Copyright 2023 Mosh Hamedani</p>
         </div>
       </div>
     </footer>
-    
-    
 
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
