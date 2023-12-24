@@ -1041,3 +1041,10 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/* block-callout */
+
+.block-callout {
+  position: relative;
+  bottom: -40px;
+}
